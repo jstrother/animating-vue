@@ -66,6 +66,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "timeline" */ '@/views/Timeline.vue'),
   },
+  {
+    path: '/master',
+    name: 'Master',
+    // route level code-splitting
+    // this generates a separate chunk (master.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "master" */ '@/views/Master.vue'),
+  },
 ];
 
 const router = new VueRouter({

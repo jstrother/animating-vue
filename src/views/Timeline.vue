@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img class="runner first" src="../assets/logo.png" alt="runner" />
-    <img class="runner second" src="../assets/logo.png" alt="runner" />
-    <img class="runner third" src="../assets/logo.png" alt="runner" />
+    <img class="runner first" src="../assets/runner.png" alt="runner" />
+    <img class="runner second" src="../assets/runner.png" alt="runner" />
+    <img class="runner third" src="../assets/runner.png" alt="runner" />
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
         duration: 2,
         ease: 'expo out',
       },
-      '<',
+      '<0.5',
     );
     tl.to(
       '.third',
