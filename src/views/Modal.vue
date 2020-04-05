@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>This is the Modal Page.</h1>
     <button @click="toggleModal">Open</button>
     <div v-if="isOpen" class="modal">
       <button @click="toggleModal">Close</button>
@@ -15,11 +16,11 @@ export default {
     };
   },
   methods: {
-    toggalModal() {
+    toggleModal() {
       this.isOpen = !this.isOpen;
     },
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
