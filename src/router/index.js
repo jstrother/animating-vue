@@ -26,6 +26,30 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "drawer" */ '@/views/Drawer.vue'),
   },
+  {
+    path: '/cards',
+    name: 'Cards',
+    // route level code-splitting
+    // this generates a separate chunk (cards.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "cards" */ '@/views/Cards.vue'),
+  },
+  {
+    path: '/simple',
+    name: 'Simple',
+    // route level code-splitting
+    // this generates a separate chunk (simple.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "simple" */ '@/views/Simple.vue'),
+  },
+  {
+    path: '/stagger',
+    name: 'Stagger',
+    // route level code-splitting
+    // this generates a separate chunk (stagger.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "stagger" */ '@/views/Stagger.vue'),
+  },
 ];
 
 const router = new VueRouter({
