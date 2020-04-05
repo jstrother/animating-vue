@@ -50,6 +50,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "stagger" */ '@/views/Stagger.vue'),
   },
+  {
+    path: '/state',
+    name: 'State',
+    // route level code-splitting
+    // this generates a separate chunk (state.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "state" */ '@/views/State.vue'),
+  },
 ];
 
 const router = new VueRouter({
